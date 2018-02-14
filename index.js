@@ -49,7 +49,8 @@
 // variable that contains an array of the game words to choose from 
 var wordChoices = ["nomadic", "indignant", "disparity", "androgynous", "pragmatic", "patronage", "dilapidated", "putative"]
 
-// array of letters = alphabet
+// hints for each word
+var wordHints = ["hint1", "hint2", "hint3", "hint4", "hint5", "hint6", "hint7", "hint8"]
 
 // array of each letter in the alphabet to choose from
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
@@ -58,9 +59,17 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 // attempts remaining = 6
 var attempts = 6
 
-var wordHints = ["hint1", "hint2", "hint3", "hint4", "hint5", "hint6", "hint7", "hint8"]
-
+// number of chances remaining displayed to the user
 document.getElementById("chances").innerHTML = attempts;
+
+// creates a random number to choose a random index from the "wordChoices" array
+var randomNum = Math.floor(Math.random() * wordChoices.length);
+
+// assigns the current word to the value of the current word at the random index number 
+var currentWord = wordChoices[randomNum]
+
+// creates a blank array to have dashes pushed to
+var blank = []
 
 // creates a for loop that starts at 0 and cycles through the alphabet length then adds 1
 for (let i = 0; i < alphabet.length; i++) {
@@ -78,20 +87,22 @@ for (let i = 0; i < alphabet.length; i++) {
     // places all of the classes with 'letterBox' inside a variable called "box"
     var box = document.getElementById(div.id);
     // console.log(box)
+
     // creates an event listener that upon clicking...
     box.addEventListener('click', function() {
-          if (attempts >= 0) {
-            document.getElementById("chances").innerHTML = (attempts--);
+        if (attempts >= 2) {
+            attempts--
+            document.getElementById("chances").innerHTML = (attempts);
             document.getElementById('button' + i).style.backgroundColor = 'orange';
             checkWord(alphabet[i])
-        }else {
+        } else {
+            // creates alert box that says "You lose"
             alert('You lose!')
+            // reloads the page after losing
             location.reload()
         }
     })
 }
-
-// -------------------------------------
 
 // creates a function called "checkWord" that allows the variable "guessedLetter" to be passed as an argument
 function checkWord(guessedLetter) {
@@ -105,39 +116,38 @@ function checkWord(guessedLetter) {
         var dashLetter = document.getElementById("guessLine").textContent;
         // prints the variable dashLetter for debugging
         console.log(dashLetter);
-
         // creates a variable "dashArray" that is assigned to the value of "dashLetter" split with the argument " " which is just empt spaces 
         var dashArray = dashLetter.split(" ");
-
         // prints the variable "dashArray" for debugging
         console.log(dashArray);
-
         // replace dash with correct letter guessed at index (var = n) in the array
         dashArray.splice(n, 1, guessedLetter);
-
         // prints the variable "dashArray" for debugging
         console.log(dashArray)
-
         // console.log(ltrArr);
         placeLetter(dashArray);
-
     } else {
         console.log('incorrect')
     }
 }
 
-function showLetter(currentItem) {
-    // console.log(alphabet[currentItem])
+// pushes dashes based on the current word length
+for (i = 0; i < wordChoices[randomNum].length; i++) {
+    blank.push('_')
+    // creates blank space between dashes
+    document.getElementById("guessLine").textContent = blank.join(' ');
+}
+console.log(currentWord)
+// creates a function called "placeLetter" that...
+function placeLetter(letterArray) {
+    // creates blank space between dashes
+    document.getElementById("guessLine").textContent = letterArray.join(' ');
 }
 
-// rounds float to integer (gets # between 0-1) * length of word from array 'wordChoices' (e.g. 5); console.log(randomNum)
-var randomNum = Math.floor(Math.random() * wordChoices.length);
+// ###   Old "checkword" function.  ###
 
-var currentWord = wordChoices[randomNum]
-
-var splitWord = currentWord.split('')
-
-console.log(splitWord)
+// var splitWord = currentWord.split('')
+// console.log(splitWord)
 
 // function checkWord(guessedLetter) {
 
@@ -150,25 +160,6 @@ console.log(splitWord)
 //         }
 //     }
 // }
-
-// creates a blank array to have dashes pushed to
-var blank = []
-
-// pushes dashes based on the current word length
-for (i = 0; i < wordChoices[randomNum].length; i++) {
-    blank.push('_')
-    // creates blank space between dashes
-    document.getElementById("guessLine").textContent = blank.join(' ');
-}
-
-console.log(currentWord)
-
-// creates a function called "placeLetter" that... ???
-function placeLetter(letterArray) {
-
-    // creates blank space between dashes
-    document.getElementById("guessLine").textContent = letterArray.join(' ');
-}
 
 // Help from Nicole
 
