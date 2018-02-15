@@ -1,11 +1,11 @@
-var wordChoices = ["nomadic", "indignant", "disparity", "androgynous", "pragmatic", "patronage", "dilapidated", "putative"]
+var wordChoices = ["nomadic"]
 
 
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
     'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
 
-var attempts = 6
+var attempts = 10
 
 document.getElementById("chances").innerHTML = attempts;
 
@@ -34,6 +34,15 @@ for (let i = 0; i < alphabet.length; i++) {
 }
 
 function checkWord(guessedLetter) {
+
+for (let i = 0; i < currentWord.length; i++) {
+
+
+
+
+
+
+}
 
     if (currentWord.includes(guessedLetter)) {
 
