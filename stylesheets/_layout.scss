@@ -1,3 +1,65 @@
 .body {
-	background-image: url('../dark-triangles.png')
+    background-image: url('../img/dictionary.jpg');
+}
+
+#rules {
+	background-image: url('../img/paper.png');
+    // background-color: white;
+    display: relative;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#hints {
+	background-image: url('../img/paper.png');
+    // background-color: white;
+    display: inline-block;
+    padding: 5px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid black;
+    width: 400px;
+    height: 250px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#chances {
+	background-image: url('../img/paper.png');
+    // background-color: white;
+    display: relative;
+    border: 2px solid black;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.letterBox {
+background-color: $button-background;
+display: inline-block;
+border: 2px solid black;
+width: 40px;
+height: 40px;
+margin: 5px;
+text-align: center;
+font-size: 25px;
+}
+
+#guessLine {
+background-image: url('../img/dust.png');
+margin: 5% auto;
+border-radius: 25px;
+padding: 10px;
+width: 400px;
+height: 75px;
+text-align: center;
+font-size: 50px;
 }
