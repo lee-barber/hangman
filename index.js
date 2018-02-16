@@ -20,7 +20,7 @@
 // Number of attempts
 
 // As long as (attempts > 0){
-// Game is live...
+// Game is live...  
 //  Display to user: "Guess a letter"
 //  User guesses letter by clicking letter in displayed alphabet
 //  if (letter exists word){
@@ -54,8 +54,7 @@ var wordHints = ["hint1", "hint2", "hint3", "hint4", "hint5", "hint6", "hint7", 
 
 // array of each letter in the alphabet to choose from
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-]
+    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 // number of chances remaining displayed to the user
 // document.getElementById("chances").innerHTML = attempts;
@@ -92,11 +91,9 @@ for (let i = 0; i < alphabet.length; i++) {
 
     // creates an event listener that upon clicking...
     box.addEventListener('click', function() {
-        // if (attempts > 0) {
 
         document.getElementById('button' + i).style.backgroundColor = 'orange';
         checkWord(alphabet[i])
-
     })
 }
 
@@ -105,12 +102,6 @@ for (i = 0; i < wordChoices[randomNum].length; i++) {
     blank.push('_')
     // creates blank space between dashes
     document.getElementById("guessLine").innerHTML = blank.join(' ');
-}
-// console.log(currentWord)
-// creates a function called "placeLetter" that...
-function placeLetter(letterArray) {
-    // creates blank space between dashes
-    document.getElementById("guessLine").innerHTML = letterArray.join(' ');
 }
 
 // creates a function called "checkWord" that allows the variable "guessedLetter" to be passed as an argument
@@ -128,8 +119,6 @@ function checkWord(guessedLetter) {
         attempts--
         document.getElementById("chances").innerHTML = attempts;
     }
-    console.log(blank.join(''))
-    console.log(currentWord)
     if (currentWord == blank.join('')){
         alert('You win!')
     }
@@ -142,33 +131,5 @@ function checkWord(guessedLetter) {
 
 
 console.log(currentWord)
-
-
-// OLD CODE 
-
-//     // creates an if statement that if the variable "currentWord" includes the variable "guessedLetter" then...
-//     if (currentWord.includes(guessedLetter)) {
-//         // create an arbitrary variable that is assigned to the value of the variable "currentWord" at the index of the variable "guessedLetter"
-//         var n = currentWord.indexOf(guessedLetter);
-//         // prints the guessedLetter for debugging
-//         console.log(guessedLetter);
-//         // showLetter(guessedLetter)
-//         var dashLetter = document.getElementById("guessLine").textContent;
-//         // prints the variable dashLetter for debugging
-//         console.log(dashLetter);
-//         // creates a variable "dashArray" that is assigned to the value of "dashLetter" split with the argument " " which is just empt spaces 
-//         var dashArray = dashLetter.split(" ");
-//         // prints the variable "dashArray" for debugging
-//         console.log(dashArray);
-//         // replace dash with correct letter guessed at index (var = n) in the array
-//         dashArray.splice(n, 1, guessedLetter);
-//         // prints the variable "dashArray" for debugging
-//         console.log(dashArray)
-//         // console.log(ltrArr);
-//         placeLetter(dashArray);
-//     } else {
-//         console.log('incorrect')
-//     }
-// }
 
 
