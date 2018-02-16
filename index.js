@@ -50,12 +50,10 @@ for (let i = 0; i < alphabet.length; i++) {
     // creates an event listener that upon clicking...
     box.addEventListener('click', function() {
 
-        document.getElementById('button' + i).style.backgroundColor = 'orange';
+        document.getElementById('button' + i).style.backgroundColor = "#3C3B3F";
         checkWord(alphabet[i])
     })
 }
-
-// document.getElementById('letterBox').style.margin = 0 auto; ?????
 
 // pushes dashes based on the current word length
 for (i = 0; i < wordChoices[randomNum].length; i++) {

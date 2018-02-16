@@ -8,30 +8,32 @@
   font-size: 25px; }
 
 .body {
+  font-family: 'Noto Sans';
   background-image: url("../img/dictionary.jpg"); }
+
+#container {
+  width: 100%; }
 
 #rules {
   background-image: url("../img/paper.png");
-  display: relative;
-  border: 2px solid black;
-  width: 400px;
-  height: 200px;
-  margin: 5px;
-  text-align: center;
-  font-size: 20px; }
-
-#hints {
-  background-image: url("../img/paper.png");
-  display: inline-block;
-  padding: 5px;
-  float: right;
-  text-align: center;
-  vertical-align: middle;
   border: 2px solid black;
   width: 400px;
   height: 250px;
   margin: 5px;
-  font-size: 20px; }
+  text-align: center;
+  font-size: 20px;
+  float: left; }
+
+#hints {
+  background-image: url("../img/paper.png");
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  width: 400px;
+  height: 250px;
+  margin: 5px;
+  font-size: 20px;
+  float: right; }
 
 #chances {
   background-image: url("../img/paper.png");
@@ -44,7 +46,7 @@
   font-size: 20px; }
 
 .letterBox {
-  background-color: purple;
+  background-color: #cad4f9;
   display: inline-block;
   border: 2px solid black;
   width: 40px;
