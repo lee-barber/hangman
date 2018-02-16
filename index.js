@@ -45,8 +45,6 @@ for (let i = 0; i < alphabet.length; i++) {
     document.body.appendChild(div);
     // places all of the classes with 'letterBox' inside a variable called "box"
     var box = document.getElementById(div.id);
-    // console.log(box)
-
     // creates an event listener that upon clicking...
     box.addEventListener('click', function() {
 
@@ -70,7 +68,6 @@ function checkWord(guessedLetter) {
             bool = true
             blank[i] = guessedLetter
             document.getElementById("guessLine").innerHTML = blank.join(' ');
-
         }
     }
     if (!bool) {
@@ -78,12 +75,10 @@ function checkWord(guessedLetter) {
         document.getElementById("chances").innerHTML = attempts + " attempts remaining";
     }
     if (currentWord == blank.join('')) {
-        alert('Nice job!  You won!  :)')
+        alert("Nice job!  You won!\n\nThe word was: " + currentWord.toUpperCase())
+        location.reload()
     } else if (attempts == 0) {
-        alert("Sorry, you lost.  :(\n\nThe word was: " + currentWord.toUpperCase())
+        alert("Sorry, you lost.\n\nThe word was: " + currentWord.toUpperCase())
         location.reload()
     }
 }
-
-console.log(currentWord)
-console.log(currentHint)
