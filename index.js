@@ -108,6 +108,12 @@
 
     hide("dead")
 
+    function hide(saved) {
+        document.getElementById(saved).style.visibility = "hidden";
+    }
+
+    hide("saved")
+
     function checkWord(guessedLetter) {
         bool = false
         for (let i = 0; i < currentWord.length; i++) {
@@ -132,7 +138,7 @@
                 function show(pole) {
                     document.getElementById(pole).style.visibility = "visible";
                 }
-                // hide("canvas");
+                hide("canvas");
                 hide("base");
                 show("pole");
                 console.log("Draw a pole!")
@@ -158,7 +164,7 @@
                     document.getElementById(head).style.visibility = "visible";
                 }
                 hide("hook");
-                show("head");   
+                show("head");
                 console.log("Draw a head!")
             }
             if (attempts == 5) {
@@ -212,9 +218,20 @@
         }
         if (currentWord == blank.join('')) {
             alert("Nice job!  You won!\n\nThe word was: " + currentWord.toUpperCase())
-            location.reload()
-        } else if (attempts == 0) {
-            alert("Sorry, you lost.\n\nThe word was: " + currentWord.toUpperCase())
-            location.reload()
+                function show(saved) {
+                    document.getElementById(dead).style.visibility = "visible";
+                }
+                hide(["base", "pole", "bar", "hook", "head", "torso", "arm1", "arm2", "leg1", "leg2", "dead"])
+                show("saved");
+                console.log("You saved me!!")
+                setTimeout(function() {
+                    window.location.reload(1);
+                }, 3000);
+            } else if (attempts == 0) {
+                alert("Sorry, you lost.\n\nThe word was: " + currentWord.toUpperCase())
+                setTimeout(function() {
+                    window.location.reload(1);
+                }, 3000);
+                // location.reload()
+            }
         }
-    }

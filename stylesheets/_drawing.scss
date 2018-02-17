@@ -3,14 +3,17 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
-#start {
-    background-color: white;
-    width: $draw-width;
-    height: $draw-height;
-    margin-left: $draw-margin-left;
-}
+    // #start {
+    //     background-color: white;
+    //     width: $draw-width;
+    //     height: $draw-height;
+    //     margin-left: $draw-margin-left;
+    //     margin-top: $draw-margin-top;
+
+    // }
 
 // #start {
 //     margin-left: 50px;
@@ -28,6 +31,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #pole {
@@ -36,6 +40,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #bar {
@@ -44,6 +49,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #hook {
@@ -52,6 +58,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #head {
@@ -60,6 +67,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #torso {
@@ -68,6 +76,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #arm1 {
@@ -76,6 +85,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #arm2 {
@@ -84,6 +94,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #leg1 {
@@ -92,6 +103,7 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #leg2 {
@@ -100,6 +112,16 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
+}
+
+#saved {
+    background-image: url('../img/saved.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
 
 #dead {
@@ -108,4 +130,5 @@
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
+    margin-top: $draw-margin-top;
 }
