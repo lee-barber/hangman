@@ -1,0 +1,111 @@
+#canvas {
+    background-color: white;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#start {
+    background-color: white;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+// #start {
+//     margin-left: 50px;
+// }
+
+// #start img {
+//     background-image: url('../img/start.png');
+//     width: $draw-width;
+//     height: $draw-height;
+// }
+
+#base {
+    background-image: url('../img/base.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#pole {
+    background-image: url('../img/pole.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#bar {
+    background-image: url('../img/bar.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#hook {
+    background-image: url('../img/hook.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#head {
+    background-image: url('../img/head.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#torso {
+    background-image: url('../img/torso.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#arm1 {
+    background-image: url('../img/arm1.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#arm2 {
+    background-image: url('../img/arm2.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#leg1 {
+    background-image: url('../img/leg1.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#leg2 {
+    background-image: url('../img/leg2.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
+
+#dead {
+    background-image: url('../img/dead.png');
+    position: absolute;
+    width: $draw-width;
+    height: $draw-height;
+    margin-left: $draw-margin-left;
+}
