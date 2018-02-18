@@ -1,46 +1,42 @@
-#guess {
-  background-color: red;
-  border: 2px solid black;
-  width: 300px;
-  height: 40px;
-  margin: 5px;
-  text-align: center;
-  font-size: 25px; }
-
-.body {
+#body {
   font-family: 'Noto Sans';
-  background-image: url("../img/dictionary-zoom.jpg"); }
+  background-image: url("../img/science.png"); }
 
 #chances {
-  background-color: white;
+  background-color: #FF6A56;
   width: 300px;
   height: 30px;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 750px;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  border: 4px solid #8E201C; }
 
 #hints {
-  background-image: url("../img/paper.png");
+  background-color: #FF6A56;
   padding: 5px;
   text-align: center;
-  border: 2px solid black;
+  border: 4px solid #8E201C;
   width: 400px;
   height: 250px;
-  margin-top: 40px;
-  margin-right: 100px;
+  margin-top: 70px;
+  margin-left: 700px;
   font-size: 20px;
-  float: right; }
+  position: absolute; }
 
 #lettersContainer {
   margin-top: 20px;
-  margin-left: 60px; }
+  margin-left: 5px;
+  background-color: #FF6A56;
+  padding: 5px;
+  position: absolute; }
 
 .letterBoxes {
-  background-color: #cad4f9;
+  background-color: #8E201C;
   text-transform: uppercase;
   display: inline-block;
-  border: 2px solid black;
+  border: 4px solid #8E201C;
   border-radius: 5px;
   width: 40px;
   height: 40px;
@@ -51,117 +47,127 @@
   line-height: 40px; }
 
 #guessLine {
-  background-image: url("../img/dust.png");
+  background-color: #FF6A56;
   text-transform: uppercase;
   border-radius: 25px;
+  border: 4px solid #8E201C;
   padding: 10px;
   width: 800px;
   height: 75px;
   text-align: center;
   font-size: 50px;
-  margin-left: 500px; }
+  margin-left: 500px;
+  margin-top: -100px;
+  position: absolute; }
 
-#canvas {
-  background-color: white;
+#drawing {
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  margin-left: 100px;
+  margin-top: 75px;
+  position: relative; }
+
+#blank {
+  width: 350px;
+  height: 450px;
+  border: 4px solid #8E201C;
+  background-color: #FF6A56;
+  position: absolute; }
 
 #base {
-  background-image: url("../img/base.png");
+  background-image: url("../img/draw/base.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #pole {
-  background-image: url("../img/pole.png");
+  background-image: url("../img/draw/pole.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #bar {
-  background-image: url("../img/bar.png");
+  background-image: url("../img/draw/bar.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #hook {
-  background-image: url("../img/hook.png");
+  background-image: url("../img/draw/hook.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #head {
-  background-image: url("../img/head.png");
+  background-image: url("../img/draw/head.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #torso {
-  background-image: url("../img/torso.png");
+  background-image: url("../img/draw/torso.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #arm1 {
-  background-image: url("../img/arm1.png");
+  background-image: url("../img/draw/arm1.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #arm2 {
-  background-image: url("../img/arm2.png");
+  background-image: url("../img/draw/arm2.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #leg1 {
-  background-image: url("../img/leg1.png");
+  background-image: url("../img/draw/leg1.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #leg2 {
-  background-image: url("../img/leg2.png");
+  background-image: url("../img/draw/leg2.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #saved {
-  background-image: url("../img/saved.png");
+  background-image: url("../img/draw/saved.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 #dead {
-  background-image: url("../img/dead.png");
+  background-image: url("../img/draw/dead.png");
   position: absolute;
   width: 350px;
   height: 450px;
-  margin-left: 15px;
-  margin-top: 30px; }
+  border: 4px solid #8E201C;
+  background-color: #FF6A56; }
 
 /*# sourceMappingURL=main.css.map */

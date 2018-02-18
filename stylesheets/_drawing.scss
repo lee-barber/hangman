@@ -1,134 +1,123 @@
-#canvas {
-    background-color: white;
+#drawing {
     width: $draw-width;
     height: $draw-height;
     margin-left: $draw-margin-left;
     margin-top: $draw-margin-top;
+    position: relative;
 }
 
-    // #start {
-    //     background-color: white;
-    //     width: $draw-width;
-    //     height: $draw-height;
-    //     margin-left: $draw-margin-left;
-    //     margin-top: $draw-margin-top;
-
-    // }
-
-// #start {
-//     margin-left: 50px;
-// }
-
-// #start img {
-//     background-image: url('../img/start.png');
-//     width: $draw-width;
-//     height: $draw-height;
-// }
+#blank {
+    width: $draw-width;
+    height: $draw-height;
+    border: $draw-border;
+    background-color: $draw-background-color;
+    position: absolute;
+}
 
 #base {
-    background-image: url('../img/base.png');
+    background-image: url('../img/draw/base.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #pole {
-    background-image: url('../img/pole.png');
+    background-image: url('../img/draw/pole.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #bar {
-    background-image: url('../img/bar.png');
+    background-image: url('../img/draw/bar.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #hook {
-    background-image: url('../img/hook.png');
+    background-image: url('../img/draw/hook.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #head {
-    background-image: url('../img/head.png');
+    background-image: url('../img/draw/head.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #torso {
-    background-image: url('../img/torso.png');
+    background-image: url('../img/draw/torso.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #arm1 {
-    background-image: url('../img/arm1.png');
+    background-image: url('../img/draw/arm1.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #arm2 {
-    background-image: url('../img/arm2.png');
+    background-image: url('../img/draw/arm2.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #leg1 {
-    background-image: url('../img/leg1.png');
+    background-image: url('../img/draw/leg1.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #leg2 {
-    background-image: url('../img/leg2.png');
+    background-image: url('../img/draw/leg2.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #saved {
-    background-image: url('../img/saved.png');
+    background-image: url('../img/draw/saved.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }
 
 #dead {
-    background-image: url('../img/dead.png');
+    background-image: url('../img/draw/dead.png');
     position: absolute;
     width: $draw-width;
     height: $draw-height;
-    margin-left: $draw-margin-left;
-    margin-top: $draw-margin-top;
+    border: $draw-border;
+    background-color: $draw-background-color;
 }

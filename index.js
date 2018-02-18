@@ -22,21 +22,22 @@
         lettersLine.appendChild(div);
         var box = document.getElementById(div.id);
         box.addEventListener('click', function() {
-            document.getElementById('button' + i).style.backgroundColor = "#3C3B3F";
+            // document.getElementById('button' + i).style.backgroundColor = "#3C3B3F";
+            document.getElementById('button' + i).style.opacity = "0.6";
             checkWord(alphabet[i])
         })
     }
-
+    console.log(currentWord)
     for (i = 0; i < wordChoices[randomNum].length; i++) {
         blank.push('__')
         document.getElementById("guessLine").innerHTML = blank.join(' ');
     }
 
-    function show(canvas) {
-        document.getElementById(canvas).style.visibility = "visible";
+    function show(blank) {
+        document.getElementById(blank).style.visibility = "visible";
     }
 
-    show("canvas");
+    show("blank");
 
     function hide(start) {
         document.getElementById(start).style.visibility = "hidden";
@@ -130,7 +131,7 @@
                 function show(base) {
                     document.getElementById(base).style.visibility = "visible";
                 }
-                hide("canvas");
+                hide("blank");
                 show("base");
                 console.log("Draw a base!")
             }
@@ -138,7 +139,7 @@
                 function show(pole) {
                     document.getElementById(pole).style.visibility = "visible";
                 }
-                hide("canvas");
+                hide("blank");
                 hide("base");
                 show("pole");
                 console.log("Draw a pole!")
@@ -147,6 +148,7 @@
                 function show(bar) {
                     document.getElementById(bar).style.visibility = "visible";
                 }
+                hide("blank");
                 hide("pole");
                 show("bar");
                 console.log("Draw a bar")
@@ -217,21 +219,23 @@
             }
         }
         if (currentWord == blank.join('')) {
-            alert("Nice job!  You won!\n\nThe word was: " + currentWord.toUpperCase())
-                function show(saved) {
-                    document.getElementById(dead).style.visibility = "visible";
-                }
-                hide(["base", "pole", "bar", "hook", "head", "torso", "arm1", "arm2", "leg1", "leg2", "dead"])
-                show("saved");
-                console.log("You saved me!!")
-                setTimeout(function() {
-                    window.location.reload(1);
-                }, 3000);
-            } else if (attempts == 0) {
-                alert("Sorry, you lost.\n\nThe word was: " + currentWord.toUpperCase())
-                setTimeout(function() {
-                    window.location.reload(1);
-                }, 3000);
-                // location.reload()
+            function show(saved) {
+                document.getElementById(saved).style.visibility = "visible";
             }
+            // hide(["base", "pole", "bar", "hook", "head", "torso", "arm1", "arm2", "leg1", "leg2", "dead"])
+            show("saved");
+            setTimeout(function() {
+                alert("Nice job!  You won!\n\nThe word was: " + currentWord.toUpperCase())
+
+                console.log("You saved me!!")
+                location.reload();
+            }, 500);
+        } else if (attempts == 0) {
+
+            setTimeout(function() {
+                alert("Sorry, you lost.\n\nThe word was: " + currentWord.toUpperCase())
+                location.reload()
+            }, 500);
+
         }
+    }
