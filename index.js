@@ -27,7 +27,7 @@
             checkWord(alphabet[i])
         })
     }
-    console.log(currentWord)
+    // console.log(currentWord)
     for (i = 0; i < wordChoices[randomNum].length; i++) {
         blank.push('__')
         document.getElementById("guessLine").innerHTML = blank.join(' ');
