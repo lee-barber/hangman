@@ -50,4 +50,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tips to [Ognian Danailov](https://www.linkedin.com/in/oggidanailov) and [Jeremy Leitmeyer](https://www.linkedin.com/in/jleitmeyer) for teaching me the fundamentals of this project
 * Much gratitude to [Zack Enders](https://github.com/ZackEnders) for helping me through the coding rough spots and making me a ham sandwich when I was hungry
 * Thank you to [Clayton Wert](https://www.linkedin.com/in/clayton-wert) for moral support and guidance during the periods of self-doubt
-* All of my love to my greatest motivation and inspiration, my two wonderful children: Mayson and Anna.  I miss you dearly.
+* All of my love to my greatest motivation and inspiration, my two wonderful children: Mayson and Anna.
