@@ -4,16 +4,26 @@
 
     var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+// uses the native JS method .random to generate a random number between 0-1, then that number is rounded down to the nearest whole number with the native JS method .floor, then that number is multiplied by the length of the variable wordChocies to create a whole number between 0 and the number of words available, then that resulting number is assigned to the variable randomNum
     var randomNum = Math.floor(Math.random() * wordChoices.length);
+// sets the variable currentWord to be assigned to the value of the variable wordChocies at the index of the variable randomNum; in other words, assigns the current word to a random index value contained within the array wordChoices
     var currentWord = wordChoices[randomNum]
+// does the same thing as the variable currentWord except this time the random number being chosen is for the matching word hint that corresponds to the current word
     var currentHint = wordHints[randomNum]
+// uses DOM Manipulation to select the HTML element "hints" and print to that div the string text concatonated and the value of currentHint (the word to be guessed); in other words, shows a box on the screen for the user to read what the hint is for the word they are attempting to guess 
     document.getElementById("hints").innerHTML = "<h1>Hint:</h1> <p>   " + currentHint;
+// uses DOM Manipulation to select the HTML element "lettersContainer" and assign the value of that div to the JS variable lettersLine; this JS variable will be accessed later to use the native JS method .appendChild so that each of the letters can be placed on the screen
     var lettersLine = document.getElementById("lettersContainer")
+// assigns the initial value of the variable attempts to 10; starts the game with the user having 10 chances to guess the word correctly
     var attempts = 10
+// uses DOM Manipulation to target the "chances" HTML element and assigns the value to the JS variable "attempts" concatonated with the string text
     document.getElementById("chances").innerHTML = (attempts) + " attempts remaining";
+// assigns the value of an empty array to the variable "blank" (this is used later in the code to push blank underscores/lines to represent letters that need to be guessed)
     var blank = []
 
+// creates a for loop that evaluates the code that follows by starting an index at 0 and cycling through the array length of "alphabet" then adding one:
     for (let i = 0; i < alphabet.length; i++) {
+// uses DOM Manipulation to target the HTML element "div" and assign the value to the JS variable "div"
         var div = document.createElement('div');
         var letters = document.createTextNode(alphabet[i])
         div.appendChild(letters);
