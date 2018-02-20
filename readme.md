@@ -22,14 +22,14 @@ This is a stand-alone web application that does not need to be installed. It wil
 
 ```
 # Rules
-6 initial attempts to guess word correctly
-Player wins if he/she guesses word before 6 attemps are used
+10 initial attempts to guess word correctly
+Player wins if he/she guesses word before 10 attemps are used
 Player loses when attempts == 0
 
 # Definitions
 array of words = wordbank
 array of letters = alphabet
-attempts remaining = 6
+attempts remaining = 10
 
 # Functionality
 Game starts upon page load
