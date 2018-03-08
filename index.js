@@ -31,7 +31,7 @@
 
 
     // creates a for loop that evaluates the code that follows by starting an index at 0 and cycling through the array length of "alphabet" by increasing the interval by 1:
-    for (let i = 0; i < alphabet.length; i++) {
+    for (var i = 0; i < alphabet.length; i++) {
         // uses DOM Manipulation to target the HTML element "div" and assign the value to the JS variable "div"
         var div = document.createElement('div');
         // uses DOM Manipulation and the native JS method .createTextNode to assign the value of "letters" to the variable "alphabet" at its current index; creates an empty element for values to be pushed into
@@ -180,7 +180,7 @@
         // creates a variable called "bool" and sets it's initial value to "false"; this just creates a starting point of reference 
         bool = false
         // creates a for loop that starts at 0 and cycles through the length of the variable currentWord, increasing the interval by 1
-        for (let i = 0; i < currentWord.length; i++) {
+        for (var i = 0; i < currentWord.length; i++) {
             // if the variable "currentWord" at it's current index is equal to the variable "guessedLetter"...; in other words, if the word that the user guessed is the same as one of the letters in the word to be guessed...
             if (currentWord[i] == guessedLetter) {
                 // assign the variable "bool" to true
