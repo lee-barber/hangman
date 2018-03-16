@@ -1,4 +1,4 @@
-<center>![screenshot](https://github.com/lee-barber/hangman/blob/master/img/hangman.gif)</center.
+<center>![screenshot](https://github.com/lee-barber/hangman/blob/master/img/hangman.gif)</center>
 
 # Hangman
 
