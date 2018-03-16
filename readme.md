@@ -1,3 +1,5 @@
+![screenshot](https://github.com/lee-barber/hangman/blob/master/img/hangman.gif)
+
 # Hangman
 
 v0.1.2
