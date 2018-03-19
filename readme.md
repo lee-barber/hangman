@@ -73,7 +73,8 @@ Otherwise{
 
 ## Known Issues
 
-* If a user clicks on the same wrong letter more than once, they lose an additional attempt instead of that already guessed letter being "shut off"
+* If a user clicks on the same wrong letter more than once, they lose an additional attempt instead of that already guessed letter being "shut off" [Fixed 2/2018]
+* No other known issues at this time.
 
 ## Testing
 
