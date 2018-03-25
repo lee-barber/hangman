@@ -4,7 +4,7 @@
 
 v0.1.2
 
-This is a traditional "hangman" game in which you must try to guess the letters of a word before all of your allotted attempts are depleted.  Each wrong guess shall result in a line of the gallows or stick figure limbs being drawn.  If you fail to guess the word correctly, the stick figure person meets their  demise.  If you guess the word correctly, the stick figure person goes home to their family.  All of the words to be guessed were carefully curated by a humanities graduate from Penn State.  Good Luck!
+This is a stand-alone web application that features the functionality of a traditional hangman game. When the page loads, the end-user is presented with a defined word hint, 10 guess attempts, a row of blank spaces that the word to be guessed contains, and a row of alphabet letters from which they may choose.  As each guessed letter is clicked, an opacity is applied that indicates the letter was chosen.  If the letter exists within the word, the guessed letter replaces one of the blank spaces.  If the letter does not exist within the word, one of the lines of the gallows or stick figure limbs is "drawn" on the screen. If you fail to guess the word correctly, the stick figure person meets their demise. If you guess the word correctly, the stick figure person goes home to their family.  All of the words to be guessed were carefully curated by a humanities graduate from Penn State.  Good Luck!
 
 ## Getting Started
 
