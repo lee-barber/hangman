@@ -102,5 +102,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Hat tips to [Ognian Danailov](https://www.linkedin.com/in/oggidanailov) and [Jeremy Leitmeyer](https://www.linkedin.com/in/jleitmeyer) for teaching me the fundamentals of this project
 * Much gratitude to [Zack Enders](https://github.com/ZackEnders) for the ham sandwich and helping me through the coding rough spots
-* My thanks to [Clayton Wert](https://www.linkedin.com/in/clayton-wert) and [Tony Stultz](https://www.linkedin.com/in/anthony-stultz-7861156/) for moral support and guidance during the periods of self-doubt
-* All of my love to my greatest motivation and inspiration, my two wonderful children, Mayson and Anna
